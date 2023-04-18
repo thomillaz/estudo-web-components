@@ -7,17 +7,28 @@
     <title>Galactica News</title>
     <link rel="stylesheet" href="style.css">
     <script src="./src/cardNews.js" defer></script>
+    <script src="./src/tituloDinamico.js" defer></script>
 </head>
 <body>
-    <div class='card'>
-        <div class='card__left'>
-            <span>By Milla Thomaz</span>
-            <a href='/'>Darth Vader Contrata Devs</a>
-            <p>Darth Vader procura desenvolvedores para trabalhar com componentes.</p>
-        </div>
-        <div class='card__right'>
-            <img src='./img/65b11439be61ac8c71c813dd47762ec8bb-star-trek-discovery.2x.rsocial.w600.webp'>
+    <div class="container">
+        <div class='card'>
+            <div class='card__left'>
+                <span>By Milla Thomaz</span>
+                <a href='/'>Darth Vader Contrata Devs</a>
+                <p>Darth Vader procura desenvolvedores para trabalhar com componentes.</p>
+            </div>
+            <div class='card__right'>
+                <img src='./img/photo.webp'>
+            </div>
         </div>
     </div>
+
+    <card-news 
+        autor="Milla Thomaz" 
+        title="Darth Vader Contrata"
+        link-url="https://www.google.com/"
+        content="Darth Vader procura desenvolvedores para trabalhar com componentes."
+        photo="./img/photo.webp">
+    </card-news>
 </body>
 </html>
